@@ -1,0 +1,17 @@
+[1m[1;34mArray.methods[0m[0m: []  try_convert
+[1m[1;34mArray#methods[0m[0m: 
+  &              clear        each        inspect       pretty_print_cycle    sample     take_while
+  *              collect      each_index  join          product               select     to_a      
+  +              collect!     empty?      keep_if       push                  select!    to_ary    
+  -              combination  eql?        last          rassoc                shelljoin  to_h      
+  <<             compact      fetch       length        reject                shift      to_s      
+  <=>            compact!     fill        map           reject!               shuffle    transpose 
+  ==             concat       find_index  map!          repeated_combination  shuffle!   uniq      
+  []             count        first       max           repeated_permutation  size       uniq!     
+  []=            cycle        flatten     min           replace               slice      unshift   
+  any?           delete       flatten!    pack          reverse               slice!     values_at 
+  append         delete_at    frozen?     permutation   reverse!              sort       zip       
+  assoc          delete_if    hash        place         reverse_each          sort!      |         
+  at             dig          include?    pop           rindex                sort_by! 
+  bsearch        drop         index       prepend       rotate                sum      
+  bsearch_index  drop_while   insert      pretty_print  rotate!               take     
