@@ -1,4 +1,4 @@
-require_relative "manager"
+require_relative "manager.rb"
 require "byebug"
 class Employee
     attr_reader :name, :title, :salary
@@ -17,31 +17,19 @@ class Employee
 
 end
 
-class Manager < Employee
-    attr_reader :employees
-    def initialize(name, title, salary, boss, employees)
-        super(name, title, salary, boss)
-        @employees = employees
-    end
+# class Manager < Employee
+#     attr_reader :employees
+#     def initialize(name, title, salary, boss, employees)
+#         super(name, title, salary, boss)
+#         @employees = employees
+#     end
 
-    def bonus(multiplier)
-        total = employees.inject(0) { |acc, empl| acc + empl.salary}
-        total * multiplier
-    end
-end
+#     def bonus(multiplier)
+#         total = employees.inject(0) { |acc, empl| acc + empl.salary}
+#         total * multiplier
+#     end
+# end
 
-david = Employee.new("David", "TA", 10000)
-shawna = Employee.new("Shawna", "TA", 12000)
-darren = Manager.new("Darren", "TA Manager", 78000, nil, [shawna, david])
-ned = Manager.new("Ned", "Founder", 1000000, nil, [darren, shawna, david])
-
-david.boss = darren
-shawna.boss = darren
-darren.boss = ned
-
-p ned.bonus(5) # => 500_000
-p darren.bonus(4) # => 88_000
-p david.bonus(3) # => 30_000
 
 # employee's name, title, salary, and boss
 # add method bonus(multiplier) 
