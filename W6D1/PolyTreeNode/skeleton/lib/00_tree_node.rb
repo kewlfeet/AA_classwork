@@ -28,8 +28,8 @@ class PolyTreeNode
   def dfs(target)
     return self if self.value == target
     @children.each do |child|
-        correct_node = child.dfs(target) 
-        return correct_node unless correct_node.nil?
+      correct_node = child.dfs(target) 
+      return correct_node unless correct_node.nil?
     end
     nil
   end
