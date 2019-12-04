@@ -1,0 +1,37 @@
+Arguments: 
+  /Users/tpena/.nvm/versions/node/v10.13.0/bin/node /usr/local/Cellar/yarn/1.9.4/libexec/bin/yarn.js add --dev webpack-dev-server
+
+PATH: 
+  /Users/tpena/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/bin:/Users/tpena/.rbenv/versions/2.5.1/bin:/usr/local/Cellar/rbenv/1.1.2/libexec:/Users/tpena/.rbenv/shims:/Users/tpena/.rbenv/bin:/Users/tpena/.nvm/versions/node/v10.13.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/Postgres.app/Contents/Versions/latest/bin:/Applications/Wireshark.app/Contents/MacOS
+
+Yarn version: 
+  1.9.4
+
+Node version: 
+  10.13.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: getaddrinfo ENOTFOUND registry.yarnpkg.com registry.yarnpkg.com:443
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:57:26)
+
+npm manifest: 
+  {
+    "name": "URLShortener",
+    "private": true,
+    "dependencies": {
+      "@rails/ujs": "^6.0.0",
+      "turbolinks": "^5.2.0",
+      "@rails/activestorage": "^6.0.0",
+      "@rails/actioncable": "^6.0.0"
+    },
+    "version": "0.1.0"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
