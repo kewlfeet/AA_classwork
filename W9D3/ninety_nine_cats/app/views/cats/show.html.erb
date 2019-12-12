@@ -1,0 +1,35 @@
+<h1> Cat Information</h1>
+
+<h2>Name: <%= @cat.name %></h1>
+
+<h3>Id: <%= @cat.id%> </h3>
+<h3>Birth Date: <%= @cat.birth_date%> </h3>
+<h3>Color: <%= @cat.color %></h3>
+<h3>Sex: <%= @cat.sex %></h3>
+<p>Description: <%= @cat.description%></p>
+
+<a href= "<%= cats_url %>">Back to Cats </a>
+
+<table>
+    <thead>
+        <tr>
+            <th>  ID  </th>
+            <th>  Name  </th>
+            <th>  Sex  </th>
+            <th>  Birth Date  </th>
+            <th>  Color  </th>
+            <th>  Description  </th>
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>  <%=@cat.id%>  </td>
+            <td>  <%=@cat.name%>  </td>
+            <td>  <%=@cat.sex%>  </td>
+            <td>  <%=@cat.birth_date%>  </td>
+            <td>  <%=@cat.color%>  </td>
+            <td>  <%=@cat.description%>  </td>
+        </tr>
+    </tbody>
+</table>
