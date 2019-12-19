@@ -1,0 +1,57 @@
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    
+}
+
+.left-nav > ul,
+.right-nav > ul {
+    display: flex;
+    align-items: flex-start;
+    
+}
+
+.left-nav > ul > li {
+    font-family: arial;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-left: 20px;
+    padding: 7px;
+	border-radius: 5px;
+	text-align: center;    
+}
+
+.right-nav > ul > li {
+    font-family: arial; 
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: bold;
+	padding-left: 1.5px;
+	border-radius: 5px;
+}
+
+#gear-dropdown-btn > button{ 
+    background-color: transparent;
+}
+
+.right-nav > ul > li:last-of-type {
+    position: relative;
+    
+}
+
+.left-nav > ul > li:hover,
+.right-nav > ul > li:last-of-type:hover {
+    background-color: $lightest-gray;
+}
+
+.left-nav span {
+    margin: 8px;
+    font-size: 13px;
+}
+
+
+.right-nav i {
+    font-size: 14px;
+}
