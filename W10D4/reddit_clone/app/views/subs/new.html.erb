@@ -1,0 +1,22 @@
+<form action="<%= subs_url %>" method="POST"> 
+
+    <%= auth_token_input%>
+    
+    <label> Title
+        <input type="text" name="sub[title]">
+    </label>
+    <label> Description
+        <input type="textarea" name="sub[description]">
+    </label>
+
+     
+    
+    
+    <input type="submit" value="Create Sub!">
+</form>
+
+<%if flash[:errors]%>
+    <%flash[:errors].each do |error|%>
+    <%=error%>
+    <%end%>
+<%end%>

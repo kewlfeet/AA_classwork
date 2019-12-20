@@ -1,0 +1,16 @@
+
+
+<h1>Sub Information</h1>
+    <ul>
+        <li>Sub Id:<%=@sub.id%></li>
+        <li>Title:<%=@sub.title%></li>
+        <li>Description:<%=@sub.description%></li>
+        <li>Moderator:<%=@sub.moderator.username%></li>
+    </ul>
+<form action="<%= subs_url %>" method="GET"> 
+    <input type="submit" value="Return To All Subs"> 
+</form>
+
+<form action="<%= edit_sub_url(@sub.id) %>" method="GET"> 
+    <input type="submit" value="Edit Sub"> 
+</form>

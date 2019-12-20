@@ -1,0 +1,18 @@
+<h1>All Subs!</h1>
+<ul><%@subs.each do |sub|%>
+    <li> 
+        <ul><%=sub.moderator.username%>
+            <li> <a href="<%= sub_url(sub.id)%>"> <%=sub.title%> </a> </li>
+        </ul>
+    </li>
+<%end%>
+
+</ul>
+
+
+<form action="<%= new_sub_url %>" method="GET"> 
+
+
+    <input type="submit" value="Create Sub!"> 
+    
+</form>
