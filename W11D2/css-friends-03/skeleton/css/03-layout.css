@@ -1,0 +1,26 @@
+/* PHASE 3: Layout */
+
+.content {
+    min-height: 200px;
+    display: flex;
+    width: 900px;
+    margin: 0 auto;
+    border: 1px solid lightgray;
+}
+
+.content-sidebar {
+    min-height: inherit;
+    background-color: white;
+    width: 200px;
+    padding: 20px;
+    border-right: 1px solid lightgray;
+
+}
+
+.content-main {
+   min-height: inherit;
+   background-color: white;
+   width: 620px;
+   padding: 20px;
+
+}
