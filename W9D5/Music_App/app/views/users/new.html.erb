@@ -1,19 +1,17 @@
-<h3> Create Account </h3>
+<h1> Create Account </h1>
 
-<form action="<%= users_url %>" method="post">
+<a class='button' href= <%= new_session_url %> > Sign In </a>
 
-    <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+<form action= "users_url" method="post">
 
-    <label for=email>
-        Enter Email Address: 
-        <input name=user[email] id=email type=email value="<%= @user.email %>">
-    </label>
+    <input type="hidden" name="authenticity_token" value = "<%= form_authenticity_token%>">
+    
+    <label for="user_email"> Enter Email </label>
+    <input name=user[email] type="email" id = "user_email">
 
-    <label for=pass>
-        Enter Password: 
-        <input name=user[password] id=pass type=password >
-    </label>
+    <label for="user_pass"> Enter Password </label>
+    <input name=user[password] type = "password" id = "user_pass" >
 
-    <input type="submit" value="Create Account">
+    <input type = "submit" value= "Submit">
 
 </form>
