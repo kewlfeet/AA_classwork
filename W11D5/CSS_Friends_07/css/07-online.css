@@ -1,0 +1,10 @@
+/* PHASE 7: Online */
+.online {
+    display: block;
+    
+    box-shadow: 1px, 1px, black;
+
+    transform: rotate(10);
+
+}
+
