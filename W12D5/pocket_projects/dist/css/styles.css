@@ -1,0 +1,125 @@
+
+html {
+  box-sizing: border-box;
+  background: #A9DBB8;
+  text-align: center;
+}
+
+h1 {
+  color: #F0F2EF;
+  font-family: 'helvetica neue';
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+}
+
+.welcome {
+  font-weight: 400;
+  margin-top: 100px;
+}
+
+/*  Phase 4: Slide In & Out Classes */
+
+.align-left {
+  float: left;
+  margin-right: 20px;
+}
+
+.align-right {
+  float: right;
+  margin-left: 20px;
+}
+
+.slide {
+  opacity: 0;
+  transition: all .5s;
+}
+
+.align-left.slide {
+  transform: translateX(-30%) scale(0.95);
+}
+
+.align-right.slide {
+  transform: translateX(30%) scale(0.95);
+}
+
+.slide.active {
+  opacity: 1;
+  transform: translateX(0%) scale(1);
+}
+
+.drop-down-dog-nav {
+  width: 150px;
+  background-color: rgb(238, 238, 238);
+  cursor: pointer;
+  border-radius: 3px;
+  /* float: right; */
+  position: absolute;
+  right: 50px;
+  top: 50px;
+  padding: 3px;
+  padding-top: 10px;
+  padding-bottom: 20px;;
+
+}
+
+.drop-down-dog-nav > h3 {
+  font-weight: bold;
+  color: gray;
+}
+
+.dog-link {
+  display: none;
+  color: gray;
+}
+
+.dog-link.open {
+  display: block;
+}
+
+.dog-link.open > a {
+  color: gray;
+}
+
+.clock-holder {
+  position: absolute;
+  left: 50px;
+  border: 1px solid white;
+  top: 50px;
+  color: white;
+  padding: 15px 40px ;
+}
+
+#party {
+  font-size: 60px;
+  font-weight: bold;
+  width: 80%;
+  margin: auto;
+}
+
+.todo-container {
+  background-color: rgb(238, 238, 238);
+  width: 65%;
+  margin: auto;
+  padding: 40px 0;
+}
+
+.todo-container > h2 {
+  font-size: 25px;
+  text-decoration: underline;
+  padding-bottom: 15px;
+
+}
+
+.add-todo-form > input[type="text"]{
+  /* padding: 20px 50px ; */
+  width: 25%;
+  height: 20px;
+  border-radius: 3px;
+  text-align: center;
+  /* margin: auto; */
+}
