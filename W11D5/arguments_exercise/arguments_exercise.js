@@ -52,6 +52,7 @@ Function.prototype.myBind = function(context) {
         that.apply(context, allArgs);
         // this(arguments);
     }
+    
 }
 
 Function.prototype.myBind2 = function(context, ...args) {
