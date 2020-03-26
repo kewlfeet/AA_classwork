@@ -35,7 +35,14 @@ class Queue {
     }
     enqueue(val) {
         const newNode = new Node(val);
-
+        if (this.length === 0) {
+            this.front = newNode;
+            this.back = newNode;
+        } else {
+            this.front.next = this.front;
+            this.front = newNode;
+            
+        }
     }
     dequeue() {
         if (this.length===0) {
